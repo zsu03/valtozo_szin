@@ -1,6 +1,7 @@
 float X=150;
 float Y=150;
 float r=125;
+boolean katt=false;
 
 void setup () {
   size(500, 500);
@@ -20,4 +21,13 @@ void draw () {
     background (#8083C9);
   }
   ellipse( 150, 150, 250, 250);
+  if (katt){background(0);
+  }
 }
+
+void mouseClicked() {
+  background(0);
+  katt=!katt;
+  
+  }
+ 
